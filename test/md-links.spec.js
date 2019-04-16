@@ -1,10 +1,10 @@
 const mdLinks = require('../');
 
 
-describe('mdLinks', () => {
+// describe('mdLinks', () => {
 
-  it('should...', () => {
-    console.log('FIX ME!');
-  });
+//   it('should...', () => {
+//     console.log('FIX ME!');
+//   });
 
-});
+// });
