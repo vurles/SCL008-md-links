@@ -20,29 +20,32 @@ const readingFiles = (files, type) => {
     });
 }
 //llamo a mi funcion
-readingFiles('./README.md','utf-8')// aqui paso el archivo para leer de forma trucha 
-.then(res =>{
-    console.log(res)
-})
-.catch(err => {
-    console.log(err)
-});
+readingFiles('./README.md','utf-8')
+    .then(res => {
+        const links = markdownLinkExtractor(res);
+        links.forEach(function (link) {
+            fetch(link).then((res)=>{
+                console.log('El estado de ' + res.url + ' se encuentra ' + res.status + ' ' + res.statusText);
+        
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
+        });
+    })
+// aqui paso el archivo para leer de forma trucha 
 
 
-
-
-
-// const links = markdownLinkExtractor(readingFiles);
-
-// links.forEach(function (link) {
-//     fetch(link).then((res)=>{
-//         console.log(res.url + ' ' + res.status + ' ' + res.statusText);
-
-//     })
-//     .catch(error => {
-//         console.log(error.message)
-//     })
+// .then(res =>{
+//     console.log(res)
+// })
+// .catch(err => {
+//     console.log(err)
 // });
+//heee mi primera promesaaaaa :) 
 
-// module.exports.links = links;
+
+
+
+module.exports.readingFiles = readingFiles;
 //
