@@ -1,5 +1,6 @@
 const fs = require('fs');
 const fetch = require ('node-fetch');
+
 const  markdownLinkExtractor = require('markdown-link-extractor');
 const command = process.argv[2]
 
@@ -19,13 +20,14 @@ const readingFiles = (files, type) => {
         });
     });
 }
+
 //llamo a mi funcion
-readingFiles('./README.md','utf-8')
+readingFiles(command,'utf-8')// aqui paso el archivo para leer de forma trucha 
     .then(res => {
         const links = markdownLinkExtractor(res);
-        links.forEach(function (link) {
-            fetch(link).then((res)=>{
-                console.log('El estado de ' + res.url + ' se encuentra ' + res.status + ' ' + res.statusText);
+        links.forEach(function (element) {
+            fetch(element).then((res)=>{
+                console.log('El estado para '.green + res.url + ' se encuentra '.green + res.status + ' ' + res.statusText);
         
             })
             .catch(error => {
@@ -33,7 +35,6 @@ readingFiles('./README.md','utf-8')
             })
         });
     })
-// aqui paso el archivo para leer de forma trucha 
 
 
 // .then(res =>{

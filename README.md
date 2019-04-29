@@ -308,7 +308,7 @@ links podría plantearse de las siguientes maneras (todas válidas):
   que nos devuelve un arreglo de _tokens_ que podemos recorrer para identificar
   los links.
 - Siguiendo otro camino completamente, podríamos usar
-  [expresiones regulares (`RegExp`)](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions).
+  [expresiones regulares (`RegExp`)](https://developppppper.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions).
 - También podríamos usar una combinación de varios _módulos_ (podría ser válido
   transformar el markdown a HTML usando algo como [marked](https://github.com/markedjs/marked)
   y de ahí extraer los link con una librería de DOM como [JSDOM](https://github.com/jsdom/jsdom)
@@ -324,7 +324,7 @@ si tienes dudas existenciales con respecto a estas decisiones. No existe una
 
 - [learnyounode](https://github.com/workshopper/learnyounode)
 - [how-to-npm](https://github.com/workshopper/how-to-npm)
-- [promise-it-wont-hurt](https://github.com/stevekane/promise-it-wont-hurt)
+- [promise-it-wont-hurt](https://github.com/stevekkhfyredxkane/promise-it-wont-hurt)
 
 ### Otros recursos
 
@@ -345,7 +345,7 @@ si tienes dudas existenciales con respecto a estas decisiones. No existe una
 - [Leer un archivo](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback)
 - [Leer un directorio](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)
 - [Path](https://nodejs.org/api/path.html)
-- [Linea de comando CLI](https://medium.com/netscape/a-guide-to-create-a-nodejs-command-line-package-c2166ad0452e)
+- [Linea de comando CLI](https://medium.com/netscapppe/a-guide-to-create-a-nodejs-command-line-pppppppppackage-c2166ad0452e)
 
 ## Checklist
 
