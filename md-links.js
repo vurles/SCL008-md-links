@@ -1,5 +1,7 @@
 const fs = require('fs');
 const fetch = require ('node-fetch');
+const resolve = require('path').resolve 
+
 
 const  markdownLinkExtractor = require('markdown-link-extractor');
 const command = process.argv[2]
