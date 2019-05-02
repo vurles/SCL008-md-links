@@ -22,9 +22,9 @@ const readingFiles = (files, type) => {
         });
     });
 }
-
+if(require.main === module){
 //llamo a mi funcion
-readingFiles(command,'utf-8')// aqui paso el archivo para leer de forma trucha 
+readingFiles(command,'utf-8')// 
     .then(res => {
         const links = markdownLinkExtractor(res);
         links.forEach(function (element) {
@@ -38,7 +38,7 @@ readingFiles(command,'utf-8')// aqui paso el archivo para leer de forma trucha
         });
     })
 
-
+};
 // .then(res =>{
 //     console.log(res)
 // })
@@ -47,7 +47,7 @@ readingFiles(command,'utf-8')// aqui paso el archivo para leer de forma trucha
 // });
 //heee mi primera promesaaaaa :) 
 
-
+//deberia haver una linea que se  
 
 
 module.exports.readingFiles = readingFiles;
